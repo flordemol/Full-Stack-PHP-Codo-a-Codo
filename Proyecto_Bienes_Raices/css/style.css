@@ -1,0 +1,522 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+/* **** BARRA DE NAVEGACIÓN **** */
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 10px;
+}
+
+nav a:hover,
+.activo {
+  color: thistle;
+  border-top: 1px solid #eaaff0;
+  border-bottom: 1px solid #eaaff0;
+  padding: 8px 0;
+}
+.activo {
+  color: white;
+}
+
+/* **** CABECERAS PÁGINAS SECUNDARIAS **** */
+.cabecera {
+  width: 100%;
+  font-weight: bold;
+  background: rgb(50, 50, 50);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 130px;
+  flex-wrap: wrap;
+}
+
+.cabecera a {
+  margin: 10px;
+}
+
+/* **** FOOTER **** */
+footer {
+  background: rgb(50, 50, 50);
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 60px;
+  height: 140px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer ul {
+  display: flex;
+  list-style: none;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+}
+
+/* **** INDEX **** */
+
+/* Header index */
+.header-index {
+  background-image: url("../img/header.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor {
+  height: 95%;
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.barraNavegacion-index {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.header-index a {
+  margin: 10px;
+}
+
+#titulo-index h1,
+#titulo-index p {
+  font-size: 40px;
+  color: white;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+h2 {
+  font-weight: normal;
+  font-size: 35px;
+  margin: 40px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 28px;
+  margin: 30px;
+}
+
+/* Sección Nosotros */
+.nos {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.nosotros-index {
+  text-align: center;
+}
+
+.tarjetasNosotros {
+  width: 400px;
+  padding: 20px;
+}
+
+/* Sección Ventas */
+.ventas {
+  display: flex;
+  flex-direction: column;
+}
+
+.vtas {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.tarjetasVtas {
+  width: 400px;
+  margin: 10px;
+  text-align: left;
+  background: rgb(245, 245, 245);
+  border: 1px solid rgb(197, 197, 197);
+  display: flex;
+  flex-direction: column;
+}
+
+.tarjetasVtas:hover {
+  filter: drop-shadow(8px 8px 10px gray);
+  -webkit-filter: drop-shadow(8px 8px 10px gray);
+}
+
+.tarjetasVtas .fotoCasaVenta {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.titulo-ventas {
+  font-size: 28px;
+  margin: 20px;
+}
+
+.ventas-valor {
+  color: rgb(113, 177, 31);
+  font-weight: bold;
+}
+
+.iconosVtas {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tarjetasVtas p {
+  line-height: 30px;
+  margin: 15px;
+}
+
+.btn-ver-propiedad {
+  background: rgb(223, 135, 22);
+  color: white;
+  border: none;
+  font-weight: bold;
+  padding: 18px 80px;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.btn-ver-propiedad:hover {
+  color: rgb(223, 135, 22);
+  background: white;
+  border: 3px solid rgb(223, 135, 22);
+  padding: 15px 80px;
+  filter: drop-shadow(8px 8px 10px gray);
+  -webkit-filter: drop-shadow(8px 8px 10px gray);
+}
+.btn-ver-todas-prop {
+  background: rgb(113, 177, 31);
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 18px 20px;
+  margin: 50px auto 25px auto;
+  cursor: pointer;
+}
+
+.btn-ver-todas-prop:hover {
+  color: rgb(113, 177, 31);
+  background: white;
+  border: 3px solid rgb(113, 177, 31);
+  padding: 15px 20px;
+  filter: drop-shadow(8px 8px 10px gray);
+  border-radius: 8px;
+  -webkit-filter: drop-shadow(8px 8px 10px gray);
+}
+
+.contenedor-btn-ver-todas {
+  text-align: right;
+  width: 83%;
+  margin: auto;
+}
+
+/* Sección Contacto */
+.contactanos {
+  background-image: url("../img/encuentra.jpg");
+  color: white;
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.contactanos h2 {
+  font-weight: bold;
+  margin: 0;
+  text-align: left;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contactanos p {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-contacto {
+  background: rgb(223, 135, 22);
+  border: none;
+  font-weight: bold;
+  padding: 18px 20px;
+  margin-left: 5%;
+}
+
+.btn-contacto:hover {
+  background: rgb(113, 177, 31);
+  filter: drop-shadow(8px 8px 10px gray);
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  -webkit-filter: drop-shadow(8px 8px 10px gray);
+}
+
+.btn-contacto {
+  color: white;
+  text-decoration: none;
+}
+
+/* Sección Blog */
+.blog {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.articulosBlog {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+}
+
+article {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+article img {
+  width: 30%;
+}
+
+.textoArticulo {
+  width: 65%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.titulo-articulo-blog {
+  font-weight: bold;
+  font-size: 27px;
+}
+
+.linea-verde {
+  background: rgb(113, 177, 31);
+  height: 4px;
+  width: 30%;
+}
+
+.texto-naranja {
+  color: rgb(223, 135, 22);
+  font-weight: bold;
+}
+
+aside {
+  display: inline-block;
+  max-width: 500px;
+}
+
+.titulo-testimoniales {
+  font-weight: normal;
+  margin: 45px;
+}
+
+.testimoniales-fondo {
+  background: rgb(113, 177, 31);
+  color: white;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  padding: 25px;
+  min-height: 350px;
+  display: flex;
+  font-size: 20px;
+}
+
+.comilla {
+  align-self: flex-start;
+}
+
+.txtTestim {
+  margin: 30px;
+  line-height: 40px;
+  height: 100%;
+}
+
+.testimoniales-footer {
+  text-align: right;
+  font-weight: bold;
+}
+
+/* **** CONTACTO **** */
+.titulo-pag-secundarias {
+  font-weight: normal;
+  font-size: 35px;
+  text-align: center;
+  margin: 35px;
+}
+
+#img-cabecera {
+  background-image: url("../img/destacada3.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 65vh;
+}
+
+#formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+
+#formulario h2 {
+  text-align: center;
+  font-size: 33px;
+  margin: 35px;
+  font-weight: normal;
+}
+
+fieldset {
+  padding: 20px 15px;
+}
+
+fieldset p {
+  margin-bottom: 20px;
+}
+
+legend {
+  font-size: 25px;
+  padding: 5px;
+}
+
+#formulario form {
+  display: flex;
+  flex-direction: column;
+}
+
+#formulario input,
+#formulario textarea,
+#formulario select {
+  width: 100%;
+  background: rgb(225, 225, 225);
+  border: none;
+  padding: 10px;
+  margin: 5px 0 15px 0;
+}
+
+#formulario textarea {
+  resize: none;
+}
+
+#formulario select {
+  appearance: inherit;
+}
+
+#formulario input[type="radio"] {
+  width: auto;
+  display: block;
+}
+
+.btn-form-contacto {
+  background: rgb(113, 177, 31);
+  color: white;
+  padding: 15px 25px;
+  border: none;
+  margin-top: 40px;
+}
+
+/* **** NOSOTROS **** */
+.nosotros-nosotros {
+  text-align: center;
+}
+
+.titulos-nosotros {
+  font-weight: normal;
+  font-size: 35px;
+  text-align: center;
+  margin: 35px;
+}
+
+.conoceNosotros {
+  width: 90%;
+  margin: auto;
+}
+
+.nos-principal {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.conoceNosotros img {
+  max-width: 40%;
+}
+
+.textoNosotros {
+  max-width: 60%;
+  margin: 20px;
+}
+
+.tituloNosotros {
+  font-weight: bold;
+}
+
+.textoNosotros p {
+  margin-bottom: 20px;
+  line-height: 30px;
+}
+
+/* **** ANUNCIOS **** */
+.titulo-anuncios {
+  font-weight: normal;
+  font-size: 35px;
+  text-align: center;
+  margin: 35px;
+}
+
+.vtasTarjetasAnuncios {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}

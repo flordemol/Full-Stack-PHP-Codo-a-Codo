@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: arial, sans-serif;
+  font-size: 15px;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header {
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  min-width: 275px;
+  margin: 20px;
+}
+
+li {
+  text-decoration: none;
+  padding-right: 15px;
+}
+
+.menuApps {
+  width: 30px;
+  height: 30px;
+  opacity: 0.5;
+  padding: 7px;
+  cursor: pointer;
+}
+
+.menuApps:hover {
+  opacity: 1;
+}
+
+.fotoPerfil {
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  object-fit: cover;
+  object-position: right;
+  cursor: pointer;
+}
+
+nav a:hover {
+  opacity: 0.85;
+  text-decoration: underline;
+}
+
+nav a {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.logoGoogle {
+  max-width: 272px;
+  height: 92px;
+  margin-top: -230px;
+}
+
+.buscador {
+  background: #fff;
+  display: flex;
+  border: 1px solid #dfe1e5;
+  border-radius: 24px;
+  height: 44px;
+  margin: 25px auto;
+  box-shadow: none;
+  align-items: center;
+  width: 50%;
+  max-width: 582px;
+  min-width: 336px;
+  justify-content: center;
+}
+
+.buscador:hover {
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+  border-color: rgba(223, 225, 229, 0);
+}
+
+.buscador i {
+  font-size: 18px;
+  padding: 20px;
+}
+
+.lupa {
+  color: #9aa0a6;
+}
+
+.mic {
+  color: rgba(66, 133, 255, 1);
+  cursor: pointer;
+}
+
+.buscador input {
+  border: none;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  cursor: text;
+  width: 83%;
+  outline: none;
+}
+
+.botones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container button {
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  border-radius: 4px;
+  color: #5f6368;
+  margin: 11px 4px;
+  padding: 0 16px;
+  line-height: 27px;
+  height: 36px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.container button:hover {
+  border: 1px solid #c6c6c6;
+  color: #222;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.idiomas {
+  font-size: small;
+  line-height: 28px;
+  margin-top: 12px;
+}
+
+.idiomas a {
+  text-decoration: none;
+  font-size: small;
+  padding: 0 3px;
+}
+
+.idiomas a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background: #f2f2f2;
+  line-height: 40px;
+  border-top: 1px solid #e4e4e4;
+  min-width: 400px;
+  font-size: 14px;
+}
+
+footer a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+footer a:hover {
+  color: #5f6368;
+  text-decoration: underline;
+}
+
+.menuGoogle {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #e4e4e4;
+  flex-wrap: wrap;
+}
+.menu1,
+.menu2 {
+  min-width: 400px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.pais {
+  margin: 0;
+  margin-left: 30px;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.menuGoogle ul {
+  margin: 0;
+}
+
+.menuGoogle ul li {
+  padding: 0 0 0 27px;
+}
+
+.menu2 ul {
+  margin-right: 30px;
+}
+
+@media screen and (max-width: 950px) {
+  .logoGoogle {
+    margin-top: 0;
+  }
+
+  footer {
+    min-width: 0;
+  }
+
+  .menuGoogle {
+    flex-direction: column;
+  }
+
+  .menuGoogle ul li {
+    padding: 0 10px;
+  }
+
+  .menu1,
+  .menu2 {
+    min-width: 0px;
+  }
+}

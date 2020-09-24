@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f8fafc;
+}
+
+.card {
+  margin-bottom: 15px;
+}
+
+.card img {
+  height: 170px;
+  object-fit: contain;
+  background: #dee4ea;
+}
+
+.card-body {
+  height: 90px;
+}
+
+.card-text {
+  color: #35414d;
+}
+
+.card-text:hover,
+a:hover {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.card:hover {
+  filter: drop-shadow(8px 8px 10px gray);
+  border: 2px solid #35414d;
+}

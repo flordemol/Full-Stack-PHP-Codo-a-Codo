@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 20px 0 0 20px;
+}
+
+.tarjeta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.tarjeta-texto {
+  font-family: sans-serif;
+  width: 40%;
+}
+
+.tarjeta-texto h2 {
+  background: rgb(255, 1, 0);
+  font-size: 20px;
+  border: 1px solid black;
+  padding: 25px 70px;
+  border-radius: 15px;
+  position: relative;
+  top: 40px;
+  box-shadow: 1px -1px 1px 0px rgba(0, 0, 0, 0.75);
+}
+
+.tarjeta-texto p {
+  background: rgb(223, 220, 223);
+  border: 1px solid rgb(150, 150, 154);
+  padding: 100px 80px;
+  border-radius: 50px;
+}
+
+.tarjeta-pikachu {
+  width: 30%;
+  background: rgb(255, 139, 1);
+  border: 3px solid black;
+  border-radius: 25px;
+}
+
+.tarjeta-pikachu h2 {
+  background: rgb(255, 68, 0);
+  border: 3px solid black;
+  padding: 10px 80px;
+  border-radius: 10px;
+  position: relative;
+  bottom: 23px;
+}
+
+.tarjeta-pikachu img {
+  width: 50%;
+  margin: auto;
+}
+
+.texto-pikachu {
+  font-weight: bold;
+  margin: 50px 40px;
+  text-align: justify;
+}
+
+.texto-pikachu p {
+  line-height: 25px;
+  font-size: 17px;
+}
