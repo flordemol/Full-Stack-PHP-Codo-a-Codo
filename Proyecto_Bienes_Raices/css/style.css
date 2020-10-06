@@ -137,7 +137,7 @@ h3 {
 }
 
 .tarjetasNosotros {
-  width: 400px;
+  max-width: 360px;
   padding: 20px;
 }
 
@@ -148,7 +148,7 @@ h3 {
 }
 
 .vtas {
-  width: 90%;
+  width: 100%;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -156,7 +156,7 @@ h3 {
 }
 
 .tarjetasVtas {
-  width: 400px;
+  max-width: 360px;
   margin: 10px;
   text-align: left;
   background: rgb(245, 245, 245);
@@ -307,7 +307,7 @@ h3 {
 .articulosBlog {
   display: flex;
   flex-direction: column;
-  max-width: 1000px;
+  max-width: 895px;
 }
 
 article {
@@ -346,7 +346,7 @@ article img {
 
 aside {
   display: inline-block;
-  max-width: 500px;
+  max-width: 450px;
 }
 
 .titulo-testimoniales {
@@ -482,7 +482,7 @@ legend {
 .nos-principal {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -491,8 +491,8 @@ legend {
 }
 
 .textoNosotros {
-  max-width: 60%;
-  margin: 20px;
+  max-width: 650px;
+  margin: 30px;
 }
 
 .tituloNosotros {
@@ -513,10 +513,26 @@ legend {
 }
 
 .vtasTarjetasAnuncios {
-  width: 80%;
+  max-width: 75%;
   margin: auto;
   text-align: center;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+@media (max-width: 1538px) {
+.vtasTarjetasAnuncios {
+  max-width: 95%;
+}
+
+@media (max-width: 1335px) {
+  .conoceNosotros img {
+    max-width: 80%;
+  }
+
+  .textoNosotros {
+    max-width: 90%;
+    margin: 30px;
+  }
 }

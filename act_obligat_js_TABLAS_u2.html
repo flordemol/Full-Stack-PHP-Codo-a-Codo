@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TABLAS - Actividad obligatoria JS Unidad 2</title>
+  </head>
+  <body style="margin-left: 50px">
+    <h1>Actividad obligatoria JavaScript Unidad 2</h1>
+    <h2>Tablas de multiplicar</h2>
+    <script>
+      for (let i = 11; i >= 9; i--) {
+        document.write("<b>La tabla del " + i + ":</b></br>");
+        for (let j = 1; j < 10; j++) {
+          document.write(i + " x " + j + ": " + i * j + "</br>");
+          if (j == 9) {
+            document.write("</br>");
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

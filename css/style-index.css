@@ -19,11 +19,45 @@ body {
 }
 
 .card-body {
-  height: 90px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .card-text {
   color: #35414d;
+}
+
+.card-body i {
+  display: inline-block;
+  font-size: 30px;
+}
+.logos {
+  text-align: right;
+}
+
+.fa-chalkboard-teacher {
+  color: seagreen;
+}
+
+.fa-html5 {
+  color: #f06529;
+}
+
+.fa-css3-alt {
+  color: #264de4;
+}
+
+.fa-bootstrap {
+  color: #9933cc;
+}
+
+.fa-js-square {
+  color: #f0db4f;
+  background-color: #35414d;
+  padding: 0 1px;
+  border-radius: 4px;
 }
 
 .card-text:hover,
@@ -35,4 +69,14 @@ a:hover {
 .card:hover {
   filter: drop-shadow(8px 8px 10px gray);
   border: 2px solid #35414d;
+  -webkit-filter: drop-shadow(8px 8px 10px gray);
+}
+
+footer {
+  background-color: #384b5f;
+  color: #f8fafc;
+  align-items: center;
+  text-align: center;
+  height: 100px;
+  display: flex;
 }

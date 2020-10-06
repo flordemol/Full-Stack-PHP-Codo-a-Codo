@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  padding: 0px 10%;
+  padding: 0px 10%;
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 85px;
+}
+
+.navbar-brand {
+  font-size: 30px;
+}
+
+#btn-nav-tickets {
+  color: rgb(150, 200, 67);
+}
+
+#btn-nav-tickets:hover {
+  color: #fff;
+}
+
+.carousel {
+  margin-bottom: 4rem;
+  margin-top: 84px;
+}
+
+.carousel-caption {
+  position: absolute;
+  right: 10%;
+  bottom: 0px;
+  top: 20%;
+  left: 50%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: right;
+}
+
+.carousel-item {
+  height: 32rem;
+}
+
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+  object-fit: cover;
+  filter: saturate(0.5);
+  -webkit-filter: saturate(0.5);
+}
+
+.carousel-item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+#btn-ser-orador {
+  color: #fff;
+  border-color: #fff;
+}
+
+#btn-ser-orador:hover {
+  background: rgb(150, 200, 67);
+  border-color: rgb(150, 200, 67);
+}
+
+#btn-comprar-tickets {
+  background: rgb(150, 200, 67);
+  border-color: rgb(150, 200, 67);
+}
+
+#btn-comprar-tickets:hover {
+  background: rgb(128, 177, 51);
+  border-color: rgb(128, 177, 51);
+}
+
+#seccionOradores,
+#seccionContacto {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.spanTitulo {
+  font-size: 15px;
+  font-weight: normal;
+  display: block;
+}
+
+.card-deck {
+  text-align: left;
+}
+
+.card img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  object-position: top;
+}
+
+#seccionConoceMas {
+  margin-bottom: 4rem;
+}
+
+#seccionConoceMas img {
+  width: 100%;
+  height: 30rem;
+  object-fit: cover;
+}
+
+#seccionConoceMas h3 {
+  margin-top: 2rem;
+}
+
+#btnConoceMas {
+  color: #fff;
+  border-color: #fff;
+}
+
+#btnConoceMas:hover {
+  color: #343a40;
+  border-color: #fff;
+  background: #fff;
+}
+
+#seccionContacto {
+  max-width: 900px;
+}
+
+.subrayado {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  -moz-text-decoration-style: dotted;
+}
+
+#btnEnviar {
+  background: rgb(150, 200, 67);
+  border-color: rgb(150, 200, 67);
+}
+
+#btnEnviar:hover {
+  background: rgb(128, 177, 51);
+  border-color: rgb(128, 177, 51);
+}
+
+footer {
+  display: flex;
+  background: linear-gradient(to right, rgb(28, 54, 67) 80%, rgb(30, 83, 113));
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .row {
+  justify-content: space-around;
+  text-align: center;
+  color: #fff;
+  margin: 0;
+}
+
+footer .row a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer .row .col {
+  padding: 3em 0;
+}
+
+@media (max-width: 1240px) {
+  .navbar {
+    padding: 0px 5%;
+  }
+
+  .carousel-caption {
+    right: 5%;
+    left: 40%;
+  }
+}
+
+@media (max-width: 1110px) {
+  .navbar {
+    padding: 0 2% 0 0;
+    height: auto;
+  }
+
+  .navbar-brand {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar-nav {
+    margin: 0 0 20px 20px;
+  }
+
+  footer .row .col {
+    padding: 1rem 0;
+  }
+
+  #seccionOradores,
+  #seccionContacto {
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 768px) {
+  #seccionConoceMas img {
+    height: 15rem;
+  }
+
+  #btnConoceMas {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 720px) {
+  .carousel-caption {
+    left: 5%;
+    text-align: justify;
+  }
+
+  h1 {
+    text-align: right;
+  }
+
+  #btn-comprar-tickets,
+  #btn-ser-orador {
+    display: block;
+    margin: 15px auto;
+  }
+
+  footer .row .col {
+    padding: 0.5rem 0;
+  }
+}
+
+@media (max-width: 620px) {
+  .card-deck .card {
+    margin-bottom: 15px;
+    flex-direction: row;
+  }
+
+  .card-deck {
+    flex-direction: column;
+  }
+  .card img {
+    min-width: 50%;
+  }
+}
