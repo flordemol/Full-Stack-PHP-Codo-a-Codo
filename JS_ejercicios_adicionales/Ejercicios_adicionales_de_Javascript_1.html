@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios adicionales de Javascript 1</title>
+</head>
+<body>
+    <header>
+        <h1>Ejercicios adicionales de Javascript 1</h1>
+        <h3 style="color: blueviolet;">En los ejercicios con "document.writhe" (que escriben por pantalla), luego de ver el resultado presione la tecla F5 para volver.</h3>
+        <section class="ejercicios">
+            <ol>
+                <li>
+                    <p>Escribe un programa de una sola línea que haga que aparezca en la pantalla un alert que diga “Hello World”.
+                        </p>
+                        <button onclick="mjeAlerta();">Ejecutar</button>
+                </li>
+                <li>
+                    <p>Escribe un programa de una sola línea que escriba en la pantalla un texto que diga
+                        “Hello World” => utilizar (document.write).
+                        </p>
+                        <button onclick="mjePantalla();">Ejecutar</button>
+                </li>
+                <li>
+                    <p>Escribe un programa de una sola línea que escriba en la pantalla el resultado de sumar 3 + 5.</p>
+                    <button onclick="suma();">Ejecutar</button>
+                </li>
+                <li>
+                    <p>Escribe un programa de dos líneas que pida el nombre del usuario con un prompt y escriba un texto que diga “Hola +  el nombre de usuario introducido por el prompt”
+                        </p>
+                        <button onclick="saludo();">Ejecutar</button>
+                </li>
+                <li>
+                    <p>Escribe un programa de tres líneas que pida dos números y escriba el resultado de sumar estos dos números.</p>
+                    <button onclick="suma2();">Ejecutar</button>
+                </li>
+                <li>
+                    <p>Escribe un programa que pida dos números y escriba en la pantalla cual es el mayor.</p>
+                    <button onclick="mayor();">Ejecutar</button>
+                </li>
+                <li>
+                    <p>Escribe un programa que pida 3 números y escriba en la pantalla el mayor de los tres.</p>
+                    <button onclick="mayorDe3();">Ejecutar</button>
+                </li>
+                <li>
+                    <p>Escribe un programa que pida un número y diga si es divisible por 2</p>
+                    <button onclick="divisibleX2();">Ejecutar</button>
+                </li>
+                <li>
+                    <p>Escribir un programa que pida la edad y si es mayor de 18 años indica que ya puede conducir</p>
+                    <button onclick="edadParaConducir();">Ejecutar</button>
+                </li>
+                <li>
+                    <p>Escribir un programa que pida una nota (número). Muestra la calificación según la nota:
+                        <ul>
+                            <li>0-3: Muy deficiente</li>
+                            <li>3-5: Insuficiente</li>
+                            <li>5-6: Suficiente</li>
+                            <li>6-7: Bien</li>
+                            <li>7-9: Notable</li>
+                            <li>9-10: Sobresaliente</li>
+                        </ul>
+                        </p>
+                        <button onclick="calificaciones();">Ejecutar</button>
+                </li>
+                <li>
+                    <p>Realiza un programa que pida cadenas de texto hasta que se pulse “cancelar”. Al salir con “cancelar” deben mostrarse todas las cadenas concatenadas con un guión </br> *Recuerda que al no ingresar nada en un prompt devuelve un valor Null
+                        </p>
+                        <button onclick="ingresarCadenas();">Ejecutar</button>
+                </li>
+                <li>
+                    <p>Realizar un programa que me permita mostrar un rango de 20 números, tanto el numero inicial con el del final deben ser dados por el usuario</p>
+                    <button onclick="rango();">Ejecutar</button>
+                </li>
+                <li>
+                    <p>Realizar un programa que muestre una lista de nombres almacenados en un Array</p>
+                    <button onclick="array();">Ejecutar</button>
+                </li>
+                <li>
+                    <p>Realizar un programa que me permita almacenar en un Array, 10 nombres y luego mostrarlos por pantalla</p>
+                    <button onclick="nombresArray();">Ejecutar</button>
+                </li>
+                <li>
+                    <p>Crea una función que reciba 2 parámetros, precio e iva, y devuelva el precio con iva incluido. </p>
+                    <button onclick="precio();">Ejecutar</button>
+                </li>
+            </ol>
+        </section>
+    </header>
+
+    <script>
+        // Ejercicio 1
+        function mjeAlerta() {
+            alert("Hello World");
+        }
+
+        // Ejercicio 2
+        function mjePantalla() {
+            document.write( "Hello World" );
+        }
+
+        // Ejercicio 3
+        function suma() {
+            document.write( "3 + 5: " +  parseInt( 3 + 5 ));
+        }
+
+        // Ejercicio 4
+        function saludo() {
+            const nombre = prompt("Escriba su nombre:");
+            document.write( `Hola ${nombre}`);
+        }
+
+        // Ejercicio 5
+        function suma2() {
+            const num1 = parseInt( prompt("Ingrese un número") );
+            const num2 = parseInt( prompt("Ingrese otro número") );
+            document.write( `${num1} + ${num2} = ${num1 + num2}`);
+        }
+
+        // Ejercicio 6
+        function mayor() {
+            const num1 = parseInt( prompt("Ingrese un número") );
+            const num2 = parseInt( prompt("Ingrese otro número") );
+
+            if(num1 > num2) {
+                document.write( `${num1} es mayor que ${num2}`);
+            } else {
+                document.write( `${num2} es mayor que ${num1}`);
+            }
+        }
+
+        // Ejercicio 7
+        function mayorDe3() {
+            let mayor = parseInt( prompt("Ingrese un número") );
+            const num2 = parseInt( prompt("Ingrese otro número") );
+            const num3 = parseInt( prompt("Ingrese uno más!") );
+
+            mayor = (mayor > num2) ? mayor : num2;
+            mayor = (mayor > num3) ? mayor : num3;
+            
+            document.write( `De los números ingresados, ${mayor} es el mayor!`);
+        }
+        
+        // Ejercicio 8
+        function divisibleX2() {
+            const num1 = parseInt( prompt("Ingrese un número") );
+
+            if ( num1 % 2 == 0 ) {
+                document.write( `${num1} es par y puede ser dividido por 2 😁`);
+            } else {
+                document.write( `${num1} no par. No puedes dividido por 2 🙁`);
+            }
+        }
+        
+         // Ejercicio 9
+         function edadParaConducir() {
+            const edad = parseInt( prompt("Ingrese su edad") );
+
+            if ( edad >= 18 ) {
+                document.write( "Usted ya puede conducir! 🚗");
+            } else {
+                document.write( "Todavía no puedes conducir");
+            }
+        }
+
+        // Ejercicio 10
+        function calificaciones() {
+            const nota = parseInt( prompt("Ingresa la nota que sacaste en el examen") );
+
+            switch (nota) {
+                case 0:
+                case 1:
+                case 2:
+                case 3:
+                    document.write( `Te sacaste un ${nota}, Muy deficiente`);
+                    break;
+                case 4:
+                case 5:
+                    document.write( `Te sacaste un ${nota}, Insuficiente`);
+                    break;
+                case 6:
+                    document.write( `Te sacaste un ${nota}, Suficiente`);
+                    break;
+                case 7:
+                    document.write( `Te sacaste un ${nota}, Bien`);
+                    break;
+                case 8:
+                case 9:
+                    document.write( `Te sacaste un ${nota}, Notable`);
+                    break;
+                case 10:
+                    document.write( `Te sacaste un ${nota}, Sobresaliente`);
+                    break;
+                default:
+                    document.write( `Nos has ingresado una nota válida. Por favor escribí un número entre 0 y 10`);
+                    break;
+            }
+        }
+
+        // Ejercicio 11
+        function ingresarCadenas() {
+            let cadenas = "";
+            let cadena = "";
+
+            do {
+                cadena = prompt("Ingresá una cadena de texto, para finalizar presioná 'cancelar'");
+
+                if(cadena == ""){
+                    cadena = "&nbsp;";
+                }
+
+                if(cadena) cadenas += (cadena + " - ");
+                
+            } while(cadena != null);
+
+            document.write(cadenas);
+        }
+
+        // Ejercicio 12
+        function rango() {
+            let num1 = 0;
+            let num2 = 0;
+
+            do {
+                num1 = parseInt( prompt("Ingrese el primer número") );
+                num2 = parseInt( prompt("Ingrese otro número (debe ser mayor que el anterior)" ));
+
+            } while(num1 > num2);
+           
+            for (let i = num1; i <= num2; i++) {
+                document.write( `${i} </br>` )   
+            }
+        }
+
+         // Ejercicio 13
+         function array() {
+            const nombres = ['Florencia', 'Laura', 'Martín', 'Matias', 'Eugenio'];
+         
+            for (let i = 0; i < nombres.length; i++) {
+                document.write(nombres[i] + "</br>");
+                
+            }
+         }
+
+         // Ejercicio 14
+         function nombresArray() {
+            const nombres = [];
+
+            confirm("Deberás ingresar 10 nombres. Aceptá para comenzar")
+
+            for (let i = 1; i < 11; i++) {
+              
+                nombres.push(prompt(`Ingresa el nombre ${i}:`))
+            }
+            document.write(nombres.join(", "));
+         }
+
+         // Ejercicio 15
+         function precio() {
+            const precioSinIva= parseInt( prompt("Ingrese el valor sin IVA para calcular precio final") );
+            const IVA = 0.21;
+            ivaIncluido(precioSinIva, IVA);
+         }
+
+         function ivaIncluido(precio, iva){
+            document.write("IVA: " + (iva*100) + "% </br>");
+            document.write("Valor sin IVA: " + precio + "</br>");
+            document.write("Precio total con iva incluido: " + (precio * iva + precio));
+         }
+    </script>
+</body>
+</html>

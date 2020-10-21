@@ -72,6 +72,20 @@ a:hover {
   -webkit-filter: drop-shadow(8px 8px 10px gray);
 }
 
+#boton-top {
+  right: 10px;
+  z-index: 99;
+  position: fixed;
+  color: #437eb9;
+  bottom: 10px;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+#boton-top:hover {
+  color: #4b6681;
+}
+
 footer {
   background-color: #384b5f;
   color: #f8fafc;
