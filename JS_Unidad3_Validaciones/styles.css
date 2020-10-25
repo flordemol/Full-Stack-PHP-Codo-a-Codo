@@ -71,7 +71,6 @@ input {
 
 .alerta,
 .mjeFormulario {
-  height: 35px;
   line-height: 35px;
   opacity: 0;
 }
@@ -89,6 +88,6 @@ input {
   .grupo-btn {
     display: flex;
     flex-direction: column;
-    margin: 0 20px;
+    margin: 10px 20px;
   }
 }

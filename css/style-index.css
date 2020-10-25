@@ -8,6 +8,10 @@ body {
   background: #f8fafc;
 }
 
+.filtros {
+  margin: 0 auto 30px auto;
+}
+
 .card {
   margin-bottom: 15px;
 }
@@ -32,6 +36,7 @@ body {
 .card-body i {
   display: inline-block;
   font-size: 30px;
+  margin: 0 3px;
 }
 .logos {
   text-align: right;
