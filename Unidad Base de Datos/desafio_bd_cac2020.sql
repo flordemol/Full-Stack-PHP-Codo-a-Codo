@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 06-11-2020 a las 21:22:28
+-- Tiempo de generación: 06-11-2020 a las 22:36:31
 -- Versión del servidor: 10.1.34-MariaDB
 -- Versión de PHP: 7.2.7
 
@@ -39,11 +39,12 @@ CREATE TABLE `departamentos` (
 --
 
 INSERT INTO `departamentos` (`numero`, `nombre`, `presupuesto`) VALUES
-(14, 'Informatica', 80000),
-(15, 'Gestion', 95000),
-(16, 'Comunicacion', 75000),
-(37, 'Desarrollo', 65000),
-(77, 'Investigacion', 40000);
+(11, 'Calidad', 4000),
+(14, 'Informatica', 8000),
+(15, 'Gestion', 9500),
+(16, 'Comunicacion', 7500),
+(37, 'Desarrollo', 6500),
+(77, 'Investigacion', 4000);
 
 -- --------------------------------------------------------
 
@@ -64,20 +65,12 @@ CREATE TABLE `empleados` (
 --
 
 INSERT INTO `empleados` (`id`, `dni`, `nombre`, `apellido`, `num_departamento`) VALUES
-(1, '31096678', 'Juan', 'Lopez', 14),
-(2, '31096675', 'Martin', 'Zarabia', 77),
-(3, '34269854', 'Jose', 'Velez', 77),
-(4, '41369852', 'Paula', 'Madariaga', 77),
-(5, '33698521', 'Pedro', 'Perez', 14),
 (6, '32698547', 'Mariana', 'Lopez', 15),
 (7, '42369854', 'Abril', 'Sanchez', 37),
-(8, '36125896', 'Martin', 'Julia', 14),
 (9, '36985471', 'Omar', 'Diaz', 15),
-(10, '32145698', 'Guadalupe', 'Perez', 77),
 (11, '32369854', 'Bernardo', 'Pantera', 37),
-(12, '36125965', 'Lucia', 'Pesaro', 14),
-(13, '31236985', 'Maria', 'Diamante', 14),
-(14, '32698547', 'Carmen', 'Barbieri', 16);
+(14, '32698547', 'Carmen', 'Barbieri', 16),
+(15, '89267109', 'Esther', 'Vazquez', 11);
 
 --
 -- Índices para tablas volcadas
@@ -104,7 +97,7 @@ ALTER TABLE `empleados`
 -- AUTO_INCREMENT de la tabla `empleados`
 --
 ALTER TABLE `empleados`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- Restricciones para tablas volcadas
