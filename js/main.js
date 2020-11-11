@@ -1,5 +1,14 @@
 const tareas = [
     {
+        "id" : 24,
+        "href" : "Unidad1PHP/index.php",
+        "imagen" : "u1_php.JPG",
+        "altIMG" : "Imagen de la act. obligatoria 'Hola mundo en PHP",
+        "titulo" : "Actividad obligatoria - 'Hola mundo' en PHP",
+        "herramientas" : ["PHP"],
+        "tipoActividad" : "Actividad obligatoria"
+    },
+    {
         "id" : 23,
         "href" : "desafioJsBoletos/alumnos.html",
         "imagen" : "desafioJsBoletos.JPG",
@@ -226,6 +235,8 @@ function iconos(tarea) {
         iconos += '<i class="fab fa-bootstrap"></i>'
     if(tarea.herramientas.includes('Javascript')) 
         iconos += '<i class="fab fa-js-square"></i>'
+    if(tarea.herramientas.includes('PHP')) 
+        iconos += '<i class="fab fa-php"></i>'
     
     return iconos;
 }
