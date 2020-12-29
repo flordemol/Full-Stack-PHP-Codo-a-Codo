@@ -1,5 +1,14 @@
 const tareas = [
     {
+        "id" : 26,
+        "href" : "Unidad3.2PHP/index.html",
+        "imagen" : "u3.2_php.JPG",
+        "altIMG" : "Imagen de la act. obligatoria Unidad 3.2 PHP",
+        "titulo" : "Actividad obligatoria Unidad 3.2 PHP/POO - Barra de navegación",
+        "herramientas" : ["HTML", "CSS", "Javascript"],
+        "tipoActividad" : "Actividad obligatoria"
+    },
+    {
         "id" : 25,
         "href" : "Unidad2PHP/user.html",
         "imagen" : "u2_php.JPG",

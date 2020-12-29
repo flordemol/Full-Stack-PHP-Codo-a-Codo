@@ -1,0 +1,120 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#logo img {
+  width: auto;
+  height: 80px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  height: auto;
+  align-items: center;
+}
+
+.nav li a,
+.nav li p {
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 12px;
+  display: block;
+}
+
+.nav li a:hover,
+.nav li p:hover {
+  background-color: #434343;
+}
+
+.icon {
+  display: none;
+  font-size: 30px;
+  color: white;
+  margin-right: 20px;
+}
+
+.nav li ul {
+  display: none;
+  position: absolute;
+  min-width: 140px;
+}
+
+.nav li:hover > ul {
+  display: block;
+}
+
+.nav li ul li {
+  position: relative;
+}
+
+.submenu2Servicios {
+  left: 30px;
+  top: 35px;
+  width: max-content;
+}
+
+@media screen and (max-width: 600px) {
+  ul {
+    display: block;
+    position: absolute;
+    top: 80px;
+    width: 100%;
+  }
+
+  .nav li a,
+  .nav li p {
+    display: none;
+  }
+  .icon {
+    display: block;
+  }
+
+  .nav.responsive a,
+  .nav.responsive p {
+    display: block;
+  }
+
+  .submenu {
+    position: absolute;
+    left: 95px;
+  }
+
+  .submenuServicios {
+    top: 65px;
+  }
+
+  .nav .submenuServicios li a,
+  .nav .submenuServicios li p,
+  .nav .submenuAcerca li a,
+  .nav .submenuAcerca li p {
+    background-color: #434343;
+  }
+
+  .nav .submenuServicios li a:hover,
+  .nav .submenuAcerca li a:hover,
+  .nav .submenuServicios li p:hover,
+  .nav .submenuAcerca li p:hover {
+    background-color: #646161;
+  }
+/*
+  .submenu2Servicios {
+    top: 35px;
+    left: 45px;
+  }
+*/
+
+  .submenuAcerca {
+    top: 105px;
+  }
+}

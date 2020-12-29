@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.login {
+  background-image: url("../img/fondo-login.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(3px) saturate(50%);
+}
+
+#fondoFormLogin {
+  background-color: silver;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  max-width: 700px;
+  margin: auto;
+  padding: 100px;
+  box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.8);
+}
+
+#volver {
+  color: black;
+  font-weight: bold;
+}
+
+#fondoFormLogin h1 {
+  text-align: center;
+  font-family: "Cabin Sketch", cursive;
+  color: rebeccapurple;
+  text-shadow: 2px 2px #a78484;
+  font-size: 4rem;
+}
+
+#logoLogin {
+  display: flex;
+  justify-content: center;
+}
+
+#logoLogin img {
+  width: 150px;
+}
+
+#fondoFormLogin h2 {
+  margin: 3rem;
+  text-align: center;
+}
+
+#olvidoPass {
+  color: rgb(37, 28, 92);
+}
+
+#btn-registro,
+#btn-login {
+  text-align: center;
+  display: block;
+  margin-top: 15px;
+}
+
+/* Registro */
+
+.registro {
+  background-image: url("../img/header.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(3px) saturate(50%);
+}
+
+@media screen and (max-width: 870px) {
+  #fondoFormLogin {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #fondoFormLogin h2 {
+    font-size: 2rem;
+    margin: 1rem;
+  }
+
+  #logoLogin img {
+    width: 100px;
+  }
+}

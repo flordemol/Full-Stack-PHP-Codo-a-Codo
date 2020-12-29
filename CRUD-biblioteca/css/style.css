@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 160px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e8daef;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+nav p {
+  margin-bottom: 0;
+}
+
+#logo {
+  font-family: "Cabin Sketch", cursive;
+  color: rebeccapurple;
+  text-shadow: 2px 2px #a78484;
+  font-size: 4rem;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+#logo img {
+  width: auto;
+  height: 80px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+#myTopnav {
+  margin-right: 10px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  height: auto;
+  align-items: center;
+}
+
+.nav li a,
+.nav li p {
+  background-color: #e8daef;
+  color: #434343;
+  text-decoration: none;
+  padding: 10px 12px;
+  display: block;
+  cursor: pointer;
+}
+
+.nav li a:hover,
+.nav li p:hover {
+  background-color: #eacdf8;
+}
+
+.icon {
+  display: none;
+  font-size: 30px;
+  color: white;
+  margin-right: 20px;
+}
+
+.nav li ul {
+  display: none;
+  position: absolute;
+  min-width: 140px;
+}
+
+.nav li:hover > ul {
+  display: block;
+}
+
+.nav li ul li {
+  position: relative;
+}
+
+.ancla:before {
+  display: block;
+  content: " ";
+  margin-top: -80px;
+  height: 80px;
+  visibility: hidden;
+}
+
+#fotoHeader {
+  width: 100%;
+  height: 50vh;
+  margin-top: -60px;
+  object-position: center;
+  object-fit: cover;
+}
+
+#frase {
+  font-family: "Caveat", cursive;
+  font-size: 2.5rem;
+  margin: 3rem auto 0rem auto;
+  color: rebeccapurple;
+}
+
+footer {
+  background: rebeccapurple;
+  color: #fafafa;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 90px;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: rgb(216, 204, 204);
+}
+
+#tablaActualizar td input,
+#tablaAgregar td input {
+  width: 100%;
+}
+
+#botonesActualizar,
+#botonesAgregar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.fa-edit,
+.fa-trash {
+  font-size: 20px;
+  color: rebeccapurple;
+}
+
+/* CONTACTO */
+
+#fotoContacto {
+  width: 100%;
+  margin: 145px auto 30px auto;
+  height: 274px;
+}
+
+#contacto {
+  min-height: 69vh;
+}
+
+#formContacto {
+  max-width: 700px;
+  margin: auto;
+}
+
+#fotoContacto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+#mainAgregar {
+  min-height: 69vh;
+}
+
+#mainConsultar,
+#mainActualizar {
+  min-height: 66vh;
+}
+
+#buscadores {
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 29px auto;
+}
+
+#areaBuscadores {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    margin-top: 100px;
+  }
+
+  nav {
+    height: 80px;
+  }
+
+  #logo img {
+    height: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  #logo {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #myTopnav {
+    display: block;
+  }
+
+  ul {
+    display: block;
+    position: absolute;
+    top: 80px;
+    width: 100%;
+  }
+
+  .nav li a,
+  .nav li p {
+    display: none;
+  }
+  .icon {
+    display: block;
+  }
+
+  .nav.responsive a,
+  .nav.responsive p {
+    display: block;
+  }
+
+  .submenu {
+    position: absolute;
+    left: 100px;
+    top: 40px;
+    border-left: 1px solid #646161;
+  }
+
+  #menu-no-login,
+  #menu-login {
+    left: 155px;
+    top: 88px;
+    border-left: 1px solid black;
+  }
+
+  #frase {
+    font-size: 2rem;
+  }
+
+  #mainConsultar .table {
+    font-size: 10px;
+    position: relative;
+    right: 25px;
+  }
+
+  #mainConsultar .table .fas {
+    font-size: 12px;
+  }
+
+  #buscadores {
+    border: none;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  #btn-buscador,
+  #btn-todo {
+    margin-bottom: 15px;
+  }
+}
